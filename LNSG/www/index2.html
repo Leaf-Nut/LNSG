@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>시작 페이지</title>
+<script type="text/javascript" src="js/sha256.js"></script>
+<script type="text/javascript">
+
+//http://ec2-52-69-94-161.ap-northeast-1.compute.amazonaws.com/CAMAweb/SgsgServlet
+function httptest(){
+    alert(sha256("가나다"));
+    
+	var httpRequest = new XMLHttpRequest();
+	var url = "http://ec2-52-69-94-161.ap-northeast-1.compute.amazonaws.com/CAMAweb/SgsgServlet";
+	
+//	httpRequest.open("POST",url,true);
+    httpRequest.open('GET', url, true);
+	
+//	httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//	httpRequest.setRequestHeader("Content-length", 0);
+
+	httpRequest.send("test");
+
+    alert(httpRequest.responseText);
+    
+}
+
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    
+//    httpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
+    
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+function start() {
+
+    var url = "http://ec2-52-69-94-161.ap-northeast-1.compute.amazonaws.com/CAMAweb/SgsgServlet";
+    
+    alert( httpGet(url) );
+	
+}
+
+</script>
+</head>
+<body onload = start()>
+
+	로고(웹페이지가 아닌 네이티브 형태로 들어가야할지도)
+	</br>
+	<a href="login_start.html">(1~3초 후로그인으로 이동)</a>
+
+</body>
+</html>
