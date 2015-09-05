@@ -12,6 +12,6 @@ gen
 out
 # Gradle builds
 /build
-/.gradle
-/.idea
 /android.iml
+/.idea
+/.gradle
