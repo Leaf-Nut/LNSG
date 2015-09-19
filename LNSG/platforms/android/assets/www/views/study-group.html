@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../lib/rs-plugin/css/settings.css">
     <link rel="stylesheet" href="../css/eco.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
 </head>
 
 <body>
@@ -54,25 +55,25 @@
 
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="about-item">
+                    <div id="ENG" class="about-item">
                         <i class="fa fa-book fa-2x"></i>
                         <h5>English - 영어</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="about-item">
+                    <div id="EPM" class="about-item">
                         <i class="fa fa-briefcase fa-2x"></i>
                         <h5>Employment - 취업</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="about-item">
+                    <div id="LAN" class="about-item">
                         <i class="fa fa-comments-o fa-2x"></i>
                         <h5>Language - 외국어</h5>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <div class="about-item">
+                    <div id="ETC" class="about-item">
                         <i class="fa fa-ellipsis-h fa-2x"></i>
                         <h5>Etc - 기타</h5>
                     </div>
@@ -80,7 +81,6 @@
             </div>
         </div>
     </section>
-
 </div>
 
 <script type="text/javascript" src="../lib/modernizr.custom.32033.js"></script>
@@ -97,8 +97,8 @@
 
 <script>
     $(document).ready(function() {
-        $('#about').click(function(){
-            alert(this);
+        $('.about-item').click(function(){
+            location.href="study-group-detail.html?test=" + this.id;
         });
 
     });
