@@ -151,17 +151,17 @@ header .navbar-default.scrolled ul.navbar-nav {
   bottom: -70px;
 }
 .section-heading {
-  margin: 60px 0 80px;
+  margin: 60px 0 40px;
   text-align: center;
 }
 .section-heading h1 {
   display: inline-block;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 300;
   margin-bottom: 0;
 }
 .section-heading p {
-  font-size: 25px;
+  font-size: 18px;
   color: #999999;
   font-weight: 300;
 }
@@ -169,7 +169,7 @@ header .navbar-default.scrolled ul.navbar-nav {
   content: "";
   position: relative;
   height: 4px;
-  width: 60px;
+  width: 70%;
   display: block;
   text-align: center;
   margin: 13px auto;
@@ -194,6 +194,7 @@ section#about .about-item {
   font-size: 17px;
   line-height: 25px;
   color: #999999;
+  margin-top:20px;
 }
 section#about .about-item i.fa {
   -webkit-border-radius: 50%;
@@ -201,7 +202,7 @@ section#about .about-item i.fa {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  padding: 35px;
+  padding: 20px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -789,7 +790,7 @@ section#about .about-item:hover h3 {
   color: #66cc99;
 }
 section#features {
-  background: #f6f6f6;
+  background: white;
 }
 section#features header h1:after {
   background: #66cc99;
